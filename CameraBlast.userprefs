@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Unity\Roll-a-Ball\Assets\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterMovement.cs">
     <Files>
-      <File FileName="..\Unity\Roll-a-Ball\Assets\Scripts\PlayerController.cs" Line="38" Column="4" />
+      <File FileName="Assets/CharacterMovement.cs" Line="55" Column="40" />
+      <File FileName="Assets/Scripts/CharacterMovement.cs" Line="66" Column="79" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
