@@ -32,9 +32,10 @@ public class CharacterMovement : MonoBehaviour
 		void processInput ()
 		{
 				//Camera
-				POV.transform.Rotate (Input.GetAxis ("Mouse Y") * mouseSensitivity * -1, 0, 0);
-				transform.Rotate (0, Input.GetAxis ("Mouse X") * mouseSensitivity, 0);
-				pr_cameraDirection = new Vector3 (Mathf.Sin (transform.rotation.y * Mathf.Deg2Rad), 0, Mathf.Cos (transform.rotation.y * Mathf.Deg2Rad));
+				POV.transform.Rotate (Input.GetAxis ("Mouse Y") * mouseSensitivity * Time.deltaTime * -1, 0, 0);
+				
+				transform.Rotate (0, Input.GetAxis ("Mouse X") * mouseSensitivity * Time.deltaTime, 0);
+				pr_cameraDirection = POV.transform.forward;
 				pr_rightDirection = Vector3.Cross (pr_cameraDirection, Vector3.up);
 				
 
@@ -42,13 +43,18 @@ public class CharacterMovement : MonoBehaviour
 				pr_movementDirection.x = Input.GetAxis ("Horizontal");
 				pr_movementDirection.z = Input.GetAxis ("Vertical");
 				//pr_movementDirection.Normalize ();
-				pr_movementDirection *= movementSpeed;
+				pr_movementDirection *= movementSpeed * Time.deltaTime;
 		}
 
 		void processMovement ()
 		{
-				/*pr_controller.Move (new Vector3 (pr_movementDirection.z * Mathf.Cos (Vector3.Angle (pr_cameraDirection, Vector3.right) * Mathf.Deg2Rad) + pr_movementDirection.x * Mathf.Cos (Vector3.Angle (pr_rightDirection, Vector3.right) * Mathf.Deg2Rad), 0,
-		                                 pr_movementDirection.z * Mathf.Cos (Vector3.Angle (pr_cameraDirection, Vector3.forward) * Mathf.Deg2Rad) + pr_movementDirection.x * Mathf.Cos (Vector3.Angle (pr_rightDirection, Vector3.forward) * Mathf.Deg2Rad)));*/
-				pr_controller.Move (transform.right * pr_movementDirection.x + transform.forward * pr_movementDirection.z);
+				//Add gravity
+				Vector3 t_gravityMovement = new Vector3 (0, (float)(pr_controller.velocity.y * Time.deltaTime + 0.5 * Physics.gravity.y * Time.deltaTime * Time.deltaTime), 0);
+				
+				if (pr_controller.isGrounded) {
+						t_gravityMovement = new Vector3 ();
+				}
+
+				pr_controller.Move (transform.right * pr_movementDirection.x + transform.forward * pr_movementDirection.z + t_gravityMovement);
 		}
 }
