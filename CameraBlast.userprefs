@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraRotation.cs">
     <Files>
-      <File FileName="Assets/CharacterMovement.cs" Line="55" Column="40" />
-      <File FileName="Assets/Scripts/CharacterMovement.cs" Line="66" Column="79" />
+      <File FileName="Assets/Scripts/CameraRotation.cs" Line="51" Column="26" />
+      <File FileName="Assets/Scripts/CharacterMovement.cs" Line="43" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

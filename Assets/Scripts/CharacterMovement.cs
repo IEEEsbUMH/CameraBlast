@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//Code written by Héctor Barreras Almarcha aka Dechcaudron
+
+using UnityEngine;
 using System.Collections;
 
 public class CharacterMovement : MonoBehaviour
