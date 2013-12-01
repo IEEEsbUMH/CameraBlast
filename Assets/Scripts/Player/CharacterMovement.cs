@@ -56,10 +56,13 @@ public class CharacterMovement : MonoBehaviour
 
 				transform.Rotate (0, Input.GetAxis ("Mouse X") * mouseSensitivity * Time.deltaTime, 0);
 				
+				if (jetpackIsAvailable) {
+						pr_jetpackValue = Input.GetAxis ("Jetpack");
+				}
 
 				//Player movement
 				//Only overwritten if the player is on the floor
-				if (pr_grounded) {
+				if (pr_grounded || pr_jetpackValue > 0) {
 						pr_movementDirection.x = Input.GetAxis ("Horizontal");
 						pr_movementDirection.z = Input.GetAxis ("Vertical");
 						//pr_movementDirection.Normalize ();
@@ -67,10 +70,6 @@ public class CharacterMovement : MonoBehaviour
 				}
 
 				pr_jumpValue = Input.GetAxis ("Jump");
-
-				if (jetpackIsAvailable) {
-						pr_jetpackValue = Input.GetAxis ("Jetpack");
-				}
 		}
 
 		void processMovement ()

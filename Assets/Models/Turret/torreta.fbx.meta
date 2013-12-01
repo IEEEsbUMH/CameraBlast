@@ -20,6 +20,9 @@ ModelImporter:
     4300000: cajatorreta
     4300002: basetorreta
     4300004: cilindrotorreta
+    6400000: basetorreta
+    6400002: cajatorreta
+    6400004: cilindrotorreta
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -42,7 +45,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .0599999987
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
