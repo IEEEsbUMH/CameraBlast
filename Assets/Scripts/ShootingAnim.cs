@@ -7,7 +7,7 @@ public class ShootingAnim : MonoBehaviour {
 	public GameObject cannons;
 	public int speedrotation; //ALWAYS set to 1.
 	public int accrotation; //ALWAYS set to 10.
-	public bool active;
+	public bool activateshooting;
 	public AudioSource shootingsound;
 	public AudioSource shootingstart;
 	public AudioSource shootingfinish;
@@ -19,7 +19,7 @@ public class ShootingAnim : MonoBehaviour {
 	
 	void Update () 
 	{
-		if (active) {
+		if (activateshooting) {
 
 			if (speedrotation < 900) {
 				speedrotation += accrotation;
