@@ -4,7 +4,6 @@ using System.Collections;
 public class FollowPlayer : MonoBehaviour {
 
 	private GameObject Player;
-
 	public static bool isInRange;
 
 	// Use this for initialization
@@ -16,9 +15,14 @@ public class FollowPlayer : MonoBehaviour {
 	void Update () {
 		if (isInRange) {
 			transform.LookAt (Player.transform);
-			GetComponentInChildren<Light> ().light.color = Color.red;
+			ChangeLightColor(Color.red);
 		} else {
-			GetComponentInChildren<Light> ().light.color = Color.green;
+			ChangeLightColor(Color.green);
 		}
+	}
+
+	void ChangeLightColor(Color color){
+		GetComponentInChildren<Light> ().light.color = color;
+		GetComponentInChildren<LensFlare> ().color = color;
 	}
 }
