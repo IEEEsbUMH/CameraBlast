@@ -4,6 +4,7 @@ using System.Collections;
 
 public class CameraRotation : MonoBehaviour
 {
+		public static bool isInRange;
 	
 		public GameObject startObject;
 		public GameObject endObject;
@@ -53,10 +54,13 @@ public class CameraRotation : MonoBehaviour
 
 		void Update ()
 		{
-			if (endObject != null && !autopilotLeft && !autopiloRight) {
-				ChangePosition (); 
-			}else if(autopilotLeft || autopiloRight){
-				RotateOnY();
+			if(!isInRange){
+				if (endObject != null && !autopilotLeft && !autopiloRight) 
+				{
+					ChangePosition (); 
+				}else if(autopilotLeft || autopiloRight){
+					RotateOnY();
+				}
 			}
 		}
 	
