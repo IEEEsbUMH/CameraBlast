@@ -24,7 +24,7 @@ public class CharacterMovement : MonoBehaviour
 
 		protected CharacterController pr_controller;
 
-		protected float pr_speed = 0;
+		protected float pr_verticalSpeed = 0;
 
 
 		// Use this for initialization
@@ -42,6 +42,7 @@ public class CharacterMovement : MonoBehaviour
 		void FixedUpdate ()
 		{
 				checkGrounding ();
+				checkFlyingAgainstCeiling ();
 				processInput ();
 				processMovement ();
 		}
@@ -75,18 +76,21 @@ public class CharacterMovement : MonoBehaviour
 		void processMovement ()
 		{
 				if (pr_grounded) {
-						pr_speed = pr_jumpValue > 0 ? jumpPower : 0;
+						pr_verticalSpeed = pr_jumpValue > 0 ? jumpPower : 0;
 				} else {
 						//Add gravity
-						pr_speed += Physics.gravity.y * Time.deltaTime;	
+						pr_verticalSpeed += Physics.gravity.y * Time.deltaTime;	
 				}
 
-				//Modifies pr_speed if jetpack is working
+				//Modifies pr_verticalSpeed if jetpack is working
 				if (pr_jetpackValue > 0) {
-						pr_speed += jetpackPower;
+						pr_verticalSpeed += jetpackPower;
+
+						//Also clear relative speed to the platform you were on
+						GetComponent<ExternalForces> ().clearCurrentSpeed ();
 				}
 				
-				Vector3 t_gravityMovement = new Vector3 (0, pr_speed * Time.deltaTime, 0);
+				Vector3 t_gravityMovement = new Vector3 (0, pr_verticalSpeed * Time.deltaTime, 0);
 
 				pr_controller.Move (transform.right * pr_movementDirection.x + transform.forward * pr_movementDirection.z + t_gravityMovement);
 		}
@@ -98,6 +102,13 @@ public class CharacterMovement : MonoBehaviour
 						h_notGroundedCount = 0;
 				} else if (++h_notGroundedCount < 5) {
 						pr_grounded = false;
+				}
+		}
+
+		void checkFlyingAgainstCeiling ()
+		{
+				if (pr_verticalSpeed > 0 && pr_controller.velocity.y == 0) {
+						pr_verticalSpeed = 0;
 				}
 		}
 }
