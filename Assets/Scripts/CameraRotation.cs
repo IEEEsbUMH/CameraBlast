@@ -30,19 +30,19 @@ public class CameraRotation : MonoBehaviour
 		void Start ()
 		{
 				player = GameObject.FindGameObjectWithTag ("Player");
-				if (!autopilotLeft && !autopiloRight) {
-						transform.LookAt (startObject.transform.position);
-				
-						startRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
-						transform.rotation = startRotation;
+				transform.LookAt (startObject.transform.position);
 		
-						transform.LookAt (endObject.transform.position);
+				startRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
+				transform.rotation = startRotation;
+				
+				transform.LookAt (endObject.transform.position);
+				
+				endRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
+				transform.rotation = startRotation;
+				targetRotation = endRotation;
 
-						endRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
-						transform.rotation = startRotation;
-						targetRotation = endRotation;
-				} else {
-					transform.rotation = Quaternion.Euler (0,0,0);
+				if (autopilotLeft || autopiloRight) {
+					transform.rotation = Quaternion.Euler (0, 0, 0);
 				}
 		}
 
