@@ -18,7 +18,6 @@ public class CameraVision : MonoBehaviour {
 		forward = transform.forward;
 		float angle = Vector3.Angle(targetDirection, forward);
 		if(angle < 25.0F){
-			FollowPlayer.isInRange = true;
 			CameraRotation.isInRange = true;
 		}
 	}

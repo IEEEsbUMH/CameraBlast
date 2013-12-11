@@ -20,31 +20,25 @@ public class CameraRotation : MonoBehaviour
 
 		private Quaternion startRotation;
 		private Quaternion endRotation;
+		private Quaternion playerRotation;
 		private Quaternion targetRotation;
 		private Quaternion currentFixedRotation;
+		
+		private GameObject player;
 
 
 		void Start ()
 		{
-		if (!autopilotLeft && !autopiloRight) {
+				player = GameObject.FindGameObjectWithTag ("Player");
+				if (!autopilotLeft && !autopiloRight) {
 						transform.LookAt (startObject.transform.position);
 				
 						startRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
 						transform.rotation = startRotation;
-						//print ("Starting Z rotation:" + transform.rotation.eulerAngles.z);
 		
 						transform.LookAt (endObject.transform.position);
 
 						endRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
-						/*movement = new Vector3 (endRotation.x - startRotation.x, endRotation.y - startRotation.y, 0);
-				movement.z = 0;
-				inverseMovement = new Vector3 (-movement.x, -movement.y, 0);
-				inverseMovement.z = 0;*/
-		
-						//rotate = movement;
-		
-						//Debug.Log ("Start: x:" + startRotation.x + " y:" + startRotation.y + " z:" + startRotation.z);
-						//Debug.Log ("End: x:" + endRotation.x + " y:" + endRotation.y + " z:" + endRotation.z);
 						transform.rotation = startRotation;
 						targetRotation = endRotation;
 				} else {
@@ -54,13 +48,21 @@ public class CameraRotation : MonoBehaviour
 
 		void Update ()
 		{
-			if(!isInRange){
-				if (endObject != null && !autopilotLeft && !autopiloRight) 
-				{
-					ChangePosition (); 
-				}else if(autopilotLeft || autopiloRight){
-					RotateOnY();
-				}
+			if (!isInRange) {
+					if (endObject != null && !autopilotLeft && !autopiloRight) {
+							ChangePosition (); 
+					} else if (autopilotLeft || autopiloRight) {
+							RotateOnY ();
+					}
+					ChangeLightColor(Color.green);
+			} else {
+					Quaternion current;
+					current = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
+					transform.LookAt (player.transform.position);
+					playerRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
+					transform.rotation = current;
+					LookAtPlayer (); 
+					ChangeLightColor(Color.red);
 			}
 		}
 	
@@ -84,6 +86,22 @@ public class CameraRotation : MonoBehaviour
 			}else{
 				transform.Rotate(Vector3.down * Time.deltaTime * speed);
 			}
+		}
+
+		void LookAtPlayer(){
+			transform.rotation = Quaternion.RotateTowards (transform.rotation, targetRotation, speed * Time.deltaTime);
+			currentFixedRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
+			transform.rotation = currentFixedRotation;
+			
+			//Target control
+			if (Quaternion.Angle (transform.rotation, targetRotation) <= anglesToChange) {
+				targetRotation = playerRotation;
+			}
+		}
+
+		void ChangeLightColor(Color color){
+			GetComponentInChildren<Light> ().light.color = color;
+			GetComponentInChildren<LensFlare> ().color = color;
 		}
 
 }
