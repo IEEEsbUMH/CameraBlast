@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 9684b99ebbae446bbb7565f5baa80a1a
+guid: 0301338524b8f45ca8edab15808984a8
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Circle
+    100000: Circle
+    100002: Cube
+    100004: //RootNode
+    400000: Circle
+    400002: Cube
+    400004: //RootNode
+    2300000: Circle
+    2300002: Cube
+    3300000: Circle
+    3300002: Cube
+    4300000: Cube
+    4300002: Circle
+    6400000: Circle
+    6400002: Cube
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -30,8 +39,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
-    importBlendShapes: 0
+    addColliders: 1
+    importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
