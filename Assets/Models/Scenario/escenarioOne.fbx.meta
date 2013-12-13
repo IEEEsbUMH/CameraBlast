@@ -1,28 +1,46 @@
 fileFormatVersion: 2
-guid: 4798866e72c394fc1b9bf9ae0313edbd
+guid: 448e24940dd02445d829392846aa82fd
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Floor
-    100004: roof
-    100006: walls
-    400000: //RootNode
-    400002: Floor
-    400004: roof
-    400006: walls
-    2300000: Floor
-    2300002: roof
-    2300004: walls
-    3300000: Floor
-    3300002: roof
-    3300004: walls
-    4300000: roof
-    4300002: walls
-    4300004: Floor
-    6400000: Floor
-    6400002: roof
-    6400004: walls
+    100000: Cube
+    100002: //RootNode
+    100004: Floor
+    100006: roof
+    100008: roomOne
+    100010: roomTwo
+    100012: walls
+    400000: Cube
+    400002: //RootNode
+    400004: Floor
+    400006: roof
+    400008: roomOne
+    400010: roomTwo
+    400012: walls
+    2300000: Cube
+    2300002: Floor
+    2300004: roof
+    2300006: roomOne
+    2300008: roomTwo
+    2300010: walls
+    3300000: Cube
+    3300002: Floor
+    3300004: roof
+    3300006: roomOne
+    3300008: roomTwo
+    3300010: walls
+    4300000: roomTwo
+    4300002: roomOne
+    4300004: roof
+    4300006: walls
+    4300008: Cube
+    4300010: Floor
+    6400000: Cube
+    6400002: Floor
+    6400004: roof
+    6400006: roomOne
+    6400008: roomTwo
+    6400010: walls
     7400000: Default Take
     9500000: //RootNode
   materials:

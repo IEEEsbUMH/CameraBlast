@@ -41,11 +41,15 @@ public class MovingPlatformBehaviour : MonoBehaviour
 		
 				//Checks if the distance to the target is less than the wanted to default
 				if (Mathf.Abs (transform.position.x - pr_targetX) <= defaultToTargetValue) {
-						transform.position.Set (pr_targetX, transform.position.y, transform.position.z);
-						pr_targetX = pr_targetX == StartX ? pr_endX : StartX;
+						changeTarget ();
 				}
 
 				currentSpeed = transform.position.x - h_lastX;
 				h_lastX = transform.position.x;
+		}
+
+		void changeTarget ()
+		{
+				pr_targetX = pr_targetX == StartX ? pr_endX : StartX;
 		}
 }
