@@ -14,16 +14,26 @@ public class ShootingAnim : MonoBehaviour {
 	public AudioClip ShootingFinish;
 	public GameObject ShootingLine;
 	protected int FrameCounter;
+	private GameObject player;
+	public int rangeTurret;
+
 
 	void Start(){
 		SpeedRotation = 0;
 		AccRotation = 10;
 		ShootingLine.GetComponent<LineRenderer>().enabled = false;
 		FrameCounter = 0;
-		}
+		player = GameObject.FindGameObjectWithTag ("Player");
+	}
 
 	void Update () 
 	{
+		float distance = Vector3.Distance (transform.position, player.transform.position);
+		if (CameraRotation.isInRange && distance < rangeTurret) {
+						ActivateShooting = true;
+				} else {
+						ActivateShooting = false;
+				}
 		if (ActivateShooting) {
 
 			if (SpeedRotation < 900) {
