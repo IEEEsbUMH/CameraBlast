@@ -44,7 +44,7 @@ public class ShootingAnim : MonoBehaviour
 								TurretSound.clip = ShootingStart;
 								if (TurretSound.isPlaying == false) {
 										TurretSound.pitch = 0.4f;
-										TurretSound.PlayDelayed (25000);
+										TurretSound.PlayDelayed (0.5f);
 								}
 						} else {
 								Shooting ();
