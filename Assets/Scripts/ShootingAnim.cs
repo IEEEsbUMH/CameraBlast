@@ -45,6 +45,7 @@ public class ShootingAnim : MonoBehaviour {
 			}
 		} else {
 			if(SpeedRotation>0){
+				ShootingLine.GetComponent<LineRenderer>().enabled= false;
 				SpeedRotation-=AccRotation;
 				Shooting();
 				TurretSound.clip=ShootingFinish;
