@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Coded by Luis Fletcher.
+using UnityEngine;
 using System.Collections;
 
 public class LightColor : MonoBehaviour {
@@ -14,7 +15,7 @@ public class LightColor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Cannons.GetComponent<ShootingAnim>().ActivateShooting && Cannons.GetComponent<ShootingAnim>().SpeedRotation < 900) {
-			TurretLight.GetComponent<Light>().color = Color.yellow;	
+			TurretLight.GetComponent<Light>().color = Color.yellow;
 		} else if (Cannons.GetComponent<ShootingAnim>().SpeedRotation == 900) {
 			TurretLight.GetComponent<Light>().color = Color.red;
 		} else{

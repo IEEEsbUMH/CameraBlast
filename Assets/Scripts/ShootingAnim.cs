@@ -1,4 +1,4 @@
-﻿//Code written by Luis Fletcher
+﻿//Coded by Luis Fletcher
 using UnityEngine;
 using System.Collections;
 
@@ -12,10 +12,14 @@ public class ShootingAnim : MonoBehaviour {
 	public AudioClip ShootingSound;
 	public AudioClip ShootingStart;
 	public AudioClip ShootingFinish;
+	public GameObject ShootingLine;
+	protected int FrameCounter;
 
 	void Start(){
 		SpeedRotation = 0;
 		AccRotation = 10;
+		ShootingLine.GetComponent<LineRenderer>().enabled = false;
+		FrameCounter = 0;
 		}
 
 	void Update () 
@@ -54,6 +58,28 @@ public class ShootingAnim : MonoBehaviour {
 		}
 				
 	}
+
+	void FixedUpdate()
+	{
+		if (ActivateShooting && SpeedRotation==900)
+		{
+			FrameCounter++;
+			if(FrameCounter<5)
+			{
+				ShootingLine.GetComponent<LineRenderer>().enabled= true;
+			}
+			if(FrameCounter>5)
+			{
+				ShootingLine.GetComponent<LineRenderer>().enabled= false;
+			}
+			if(FrameCounter==10)
+			{
+				FrameCounter=0;
+			}
+		}
+
+	}
+
 
 	void Shooting ()
 	{
