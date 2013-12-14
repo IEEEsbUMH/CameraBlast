@@ -4,47 +4,52 @@ using System.Collections;
 
 public class ShootingAnim : MonoBehaviour {
 	
-	public GameObject cannons;
-	public int speedrotation; //ALWAYS set to 1.
-	public int accrotation; //ALWAYS set to 10.
-	public bool activateshooting;
-	public AudioSource turretsound;
-	public AudioClip shootingsound;
-	public AudioClip shootingstart;
-	public AudioClip shootingfinish;
+	public GameObject Cannons;
+	public int SpeedRotation; //ALWAYS set to 1.
+	public int AccRotation; //ALWAYS set to 10.
+	public bool ActivateShooting;
+	public AudioSource TurretSound;
+	public AudioClip ShootingSound;
+	public AudioClip ShootingStart;
+	public AudioClip ShootingFinish;
+
+	void Start(){
+		SpeedRotation = 0;
+		AccRotation = 10;
+		}
 
 	void Update () 
 	{
-		if (activateshooting) {
+		if (ActivateShooting) {
 
-			if (speedrotation < 900) {
-				speedrotation += accrotation;
+			if (SpeedRotation < 900) {
+				SpeedRotation += AccRotation;
 				Shooting ();
-				turretsound.clip=shootingstart;
-				if(turretsound.isPlaying==false){
-					turretsound.pitch=0.4f;
-					turretsound.Play(25000);
+				TurretSound.clip=ShootingStart;
+				if(TurretSound.isPlaying==false){
+					TurretSound.pitch=0.4f;
+					TurretSound.Play(25000);
 				}
 			} else {
 				Shooting ();
-				turretsound.clip=shootingsound;
-				turretsound.pitch=1;
-				turretsound.loop=false;
-				if(turretsound.isPlaying==false){
-					turretsound.Play();
+				TurretSound.clip=ShootingSound;
+				TurretSound.pitch=1;
+				TurretSound.loop=false;
+				if(TurretSound.isPlaying==false){
+					TurretSound.Play();
 				}
 			}
 		} else {
-			if(speedrotation>0){
-				speedrotation-=accrotation;
+			if(SpeedRotation>0){
+				SpeedRotation-=AccRotation;
 				Shooting();
-				turretsound.clip=shootingfinish;
-				if(speedrotation>600 && turretsound.isPlaying==false){
-					turretsound.pitch=0.4f;
-					turretsound.Play();
+				TurretSound.clip=ShootingFinish;
+				if(SpeedRotation>600 && TurretSound.isPlaying==false){
+					TurretSound.pitch=0.4f;
+					TurretSound.Play();
 				}
 			}else{
-				speedrotation=0;
+				SpeedRotation=0;
 			}
 		}
 				
@@ -52,7 +57,7 @@ public class ShootingAnim : MonoBehaviour {
 
 	void Shooting ()
 	{
-		transform.Rotate (0, 0, Time.deltaTime * speedrotation);
+		transform.Rotate (0, 0, Time.deltaTime * SpeedRotation);
 
 	}
 }

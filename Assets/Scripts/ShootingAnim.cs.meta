@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 3d196ff42d0c8914d959f7b02b9e526f
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Cannons: {instanceID: 0}
+  - TurretSound: {instanceID: 0}
+  - ShootingSound: {fileID: 8300000, guid: f6b074aeaba054fff8a51addbaf732d7, type: 3}
+  - ShootingStart: {fileID: 8300000, guid: f6b074aeaba054fff8a51addbaf732d7, type: 3}
+  - ShootingFinish: {fileID: 8300000, guid: 6e0038d8232c040a296f08c869ac6424, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
