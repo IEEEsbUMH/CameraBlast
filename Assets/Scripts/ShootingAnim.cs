@@ -6,8 +6,8 @@ public class ShootingAnim : MonoBehaviour
 {
 	
 		public GameObject Cannons;
-		public int SpeedRotation; //ALWAYS set to 1.
-		public int AccRotation; //ALWAYS set to 10.
+		public int SpeedRotation; //ALWAYS set to 0.
+		public int AccRotation; //ALWAYS set to 38.
 		public bool ActivateShooting;
 		public AudioSource TurretSound;
 		public AudioClip ShootingSound;
@@ -22,7 +22,7 @@ public class ShootingAnim : MonoBehaviour
 		void Start ()
 		{
 				SpeedRotation = 0;
-				AccRotation = 10;
+				AccRotation = 38;
 				ShootingLine.GetComponent<LineRenderer> ().enabled = false;
 				FrameCounter = 0;
 				player = GameObject.FindGameObjectWithTag ("Player");
@@ -74,7 +74,7 @@ public class ShootingAnim : MonoBehaviour
 
 		void FixedUpdate ()
 		{
-				if (ActivateShooting && SpeedRotation == 900) {
+				if (ActivateShooting && SpeedRotation > 899) {
 						FrameCounter++;
 						if (FrameCounter < 5) {
 								ShootingLine.GetComponent<LineRenderer> ().enabled = true;
