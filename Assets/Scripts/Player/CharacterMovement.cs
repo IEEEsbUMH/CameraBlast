@@ -50,15 +50,15 @@ public class CharacterMovement : MonoBehaviour
 		void processInput ()
 		{
 				//Camera
-				if (Input.GetAxis ("Mouse Y") > 0 && Vector3.Angle (transform.up, pr_cameraDirection) > minHeadAngle || Input.GetAxis ("Mouse Y") < 0 && Vector3.Angle (transform.up, pr_cameraDirection) < maxHeadAngle) {
-						POV.transform.Rotate (Input.GetAxis ("Mouse Y") * mouseSensitivity * Time.deltaTime * -1, 0, 0);
+				if (Input.GetAxis (AxesManager.CameraY) > 0 && Vector3.Angle (transform.up, pr_cameraDirection) > minHeadAngle || Input.GetAxis (AxesManager.CameraY) < 0 && Vector3.Angle (transform.up, pr_cameraDirection) < maxHeadAngle) {
+						POV.transform.Rotate (Input.GetAxis (AxesManager.CameraY) * mouseSensitivity * Time.deltaTime * -1, 0, 0);
 						pr_cameraDirection = POV.transform.forward;		
 				}
 
-				transform.Rotate (0, Input.GetAxis ("Mouse X") * mouseSensitivity * Time.deltaTime, 0);
+				transform.Rotate (0, Input.GetAxis (AxesManager.CameraX) * mouseSensitivity * Time.deltaTime, 0);
 				
 				if (jetpackIsAvailable) {
-						pr_jetpackValue = Input.GetAxis ("Jetpack");
+						pr_jetpackValue = Input.GetAxis (AxesManager.Jetpack);
 				}
 
 				//Player movement
@@ -70,7 +70,7 @@ public class CharacterMovement : MonoBehaviour
 						pr_movementDirection *= movementSpeed * Time.deltaTime;
 				}
 
-				pr_jumpValue = Input.GetAxis ("Jump");
+				pr_jumpValue = Input.GetAxis (AxesManager.Jump);
 		}
 
 		void processMovement ()
