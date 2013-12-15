@@ -10,13 +10,13 @@ public class LengthBehaviour : MonoBehaviour
 		// Use this for initialization
 		void Start ()
 		{
-				pr_ray = new Ray (transform.position, Vector3.left);
+				pr_ray = new Ray (transform.position, transform.right * -1);
 		}
 	
 		// Update is called once per frame
 		public void recalculate ()
 		{
-				if (Physics.Raycast (pr_ray, out pr_rayHit, 10)) {
+				if (Physics.Raycast (pr_ray, out pr_rayHit)) {
 						transform.localScale = new Vector3 (pr_rayHit.distance, 1, 1);
 				}
 		}

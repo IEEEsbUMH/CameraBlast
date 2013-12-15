@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 		public int TimeToStartHealing;
 		public float HealingSpeed;
 		public int MinY;
+		public GameObject DamageLayer;
 
 		protected float pr_health;
 		protected int pr_sinceLastBullet;
@@ -40,9 +41,20 @@ public class PlayerHealth : MonoBehaviour
 				}
 		}
 
+		void Update ()
+		{
+				if (pr_health != MaxHealth) {
+						DamageLayer.SetActive (true);
+						DamageLayer.GetComponent<GUITexture> ().color = new Color (1, 0, 0, (MaxHealth - pr_health) / MaxHealth);
+						print ("weee");
+				} else {
+						//DamageLayer.SetActive (false);
+				}
+		}
+
 		void Die ()
 		{
 				pr_health = 0;
-				print ("You Died");
+				//print ("You Died");
 		}
 }
