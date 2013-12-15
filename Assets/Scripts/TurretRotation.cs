@@ -5,7 +5,8 @@ using System.Collections;
 public class TurretRotation : MonoBehaviour {
 
 	private GameObject player;
-	public GameObject legs;
+	public GameObject lightAxis;
+	public GameObject cannons;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,8 @@ public class TurretRotation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		transform.RotateAround(legs.transform.position,Vector3.up,20*Time.deltaTime);
+		if (cannons.GetComponent<ShootingAnim> ().ActivateShooting) {
+						transform.RotateAround (lightAxis.transform.position, Vector3.up, 20 * Time.deltaTime);
+				}
 	}
 }
