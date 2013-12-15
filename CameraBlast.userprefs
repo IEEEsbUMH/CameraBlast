@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LengthBehaviour.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShootingAnim.cs">
     <Files>
-      <File FileName="Assets\Scripts\LengthBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TurretRotation.cs" Line="25" Column="2" />
+      <File FileName="Assets\Scripts\ShootingAnim.cs" Line="41" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
