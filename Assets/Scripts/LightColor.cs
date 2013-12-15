@@ -20,7 +20,7 @@ public class LightColor : MonoBehaviour
 		{
 				if (Cannons.GetComponent<ShootingAnim> ().ActivateShooting && Cannons.GetComponent<ShootingAnim> ().SpeedRotation < 900) {
 						changeColors (Color.yellow);
-				} else if (Cannons.GetComponent<ShootingAnim> ().SpeedRotation > 900) {
+				} else if (Cannons.GetComponent<ShootingAnim> ().SpeedRotation >= 900) {
 						changeColors (Color.red);
 				} else {
 						changeColors (Color.green);

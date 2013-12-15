@@ -6,30 +6,46 @@ public class ShootingAnim : MonoBehaviour
 {
 	
 		public GameObject Cannons;
-		public int SpeedRotation; //ALWAYS set to 0.
-		public int AccRotation; //ALWAYS set to 38.
 		public bool ActivateShooting;
 		public AudioSource TurretSound;
 		public AudioClip ShootingSound;
 		public AudioClip ShootingStart;
 		public AudioClip ShootingFinish;
-		public GameObject ShootingLine;
-		protected int FrameCounter;
-		private GameObject player;
+		public GameObject ShootingLine;		
 		public int rangeTurret;
+		public int SpeedRotation; //Should be set to 0 in the beggining.
+	
+		protected int AccRotation; //ALWAYS set to 12.
+		protected int FrameCounter;
 
+		private GameObject player;
 
 		void Start ()
 		{
 				SpeedRotation = 0;
-				AccRotation = 38;
+				AccRotation = 12;
 				ShootingLine.GetComponent<LineRenderer> ().enabled = false;
 				FrameCounter = 0;
 				player = GameObject.FindGameObjectWithTag ("Player");
 		}
+	
 
-		void Update ()
+		void FixedUpdate ()
 		{
+				if (ActivateShooting && SpeedRotation > 899) {
+						FrameCounter++;
+						if (FrameCounter < 5) {
+								ShootingLine.GetComponent<LineRenderer> ().enabled = true;
+								ShootingLine.GetComponent<LengthBehaviour> ().recalculate ();
+						}
+						if (FrameCounter > 5) {
+								ShootingLine.GetComponent<LineRenderer> ().enabled = false;
+						}
+						if (FrameCounter == 10) {
+								FrameCounter = 0;
+						}
+				}
+
 				float distance = Vector3.Distance (transform.position, player.transform.position);
 				if (CameraRotation.isInRange && distance < rangeTurret) {
 						ActivateShooting = true;
@@ -37,7 +53,7 @@ public class ShootingAnim : MonoBehaviour
 						ActivateShooting = false;
 				}
 				if (ActivateShooting) {
-
+			
 						if (SpeedRotation < 900) {
 								SpeedRotation += AccRotation;
 								Shooting ();
@@ -69,24 +85,6 @@ public class ShootingAnim : MonoBehaviour
 								SpeedRotation = 0;
 						}
 				}
-				
-		}
-
-		void FixedUpdate ()
-		{
-				if (ActivateShooting && SpeedRotation > 899) {
-						FrameCounter++;
-						if (FrameCounter < 5) {
-								ShootingLine.GetComponent<LineRenderer> ().enabled = true;
-								ShootingLine.GetComponent<LengthBehaviour> ().recalculate ();
-						}
-						if (FrameCounter > 5) {
-								ShootingLine.GetComponent<LineRenderer> ().enabled = false;
-						}
-						if (FrameCounter == 10) {
-								FrameCounter = 0;
-						}
-				}
 
 		}
 
@@ -94,7 +92,6 @@ public class ShootingAnim : MonoBehaviour
 		void Shooting ()
 		{
 				transform.Rotate (0, 0, Time.deltaTime * SpeedRotation);
-
 		}
 }
 
