@@ -25,14 +25,27 @@ public class CameraVision : MonoBehaviour {
 		float angle = Vector3.Angle(targetDirection, forward);
 		float distance = Vector3.Distance (transform.position, player.transform.position);
 		if (angle < 25.0F && distance < rangeVision) {
-			CameraRotation.isInRange = true;
-			isPlayer = true;
+			FollowPlayer(true);
+			CheckforWalls ();
 		} else {
 			if(isPlayer){
-				CameraRotation.isInRange = false;
-				isPlayer = false;
+				FollowPlayer(false);
 			}
 		}
 
+	}
+
+	public void FollowPlayer(bool isFollowing){
+		CameraRotation.isInRange = isFollowing;
+		isPlayer = isFollowing;
+	}
+
+	void CheckforWalls(){
+		RaycastHit hit;
+		if (Physics.Raycast (transform.position, player.transform.position-transform.position, out hit)) {
+			if(hit.collider.tag == "Walls"){
+				FollowPlayer(false);
+			}
+		}
 	}
 }

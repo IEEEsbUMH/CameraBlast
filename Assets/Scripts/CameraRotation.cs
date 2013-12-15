@@ -9,6 +9,7 @@ public class CameraRotation : MonoBehaviour
 		public GameObject startObject;
 		public GameObject endObject;
 		public int speed;
+		public int speedChasingPlayer;
 		public float anglesToChange;
 
 		public bool autopilotLeft;
@@ -63,6 +64,7 @@ public class CameraRotation : MonoBehaviour
 					transform.rotation = current;
 					LookAtPlayer (); 
 					ChangeLightColor(Color.red);
+					//CheckforWalls();
 			}
 		}
 	
@@ -89,7 +91,7 @@ public class CameraRotation : MonoBehaviour
 		}
 
 		void LookAtPlayer(){
-			transform.rotation = Quaternion.RotateTowards (transform.rotation, targetRotation, speed * Time.deltaTime);
+			transform.rotation = Quaternion.RotateTowards (transform.rotation, targetRotation, speedChasingPlayer * Time.deltaTime);
 			currentFixedRotation = Quaternion.Euler (transform.eulerAngles.x, transform.eulerAngles.y, 0);
 			transform.rotation = currentFixedRotation;
 			
@@ -103,5 +105,14 @@ public class CameraRotation : MonoBehaviour
 			GetComponentInChildren<Light> ().light.color = color;
 			GetComponentInChildren<LensFlare> ().color = color;
 		}
+
+		/*void CheckforWalls(){
+		RaycastHit hit;
+			if (Physics.Raycast (transform.position, player.transform.position-transform.position, out hit)) {
+				if(hit.collider.tag == "Walls"){
+					isInRange = false;
+				}
+			}
+		}*/
 
 }
