@@ -1,4 +1,4 @@
-﻿//Coded by Luis Fletcher. Edited by Héctor Barreras
+﻿//Coded by Luis Fletcher. Edited by Héctor Barreras and Miguel Catalan.
 using UnityEngine;
 using System.Collections;
 
@@ -7,6 +7,7 @@ public class TurretRotation : MonoBehaviour
 		public GameObject Axis;
 		public GameObject cannons;
 		public float RotationSpeed;
+		public float anglesToChange;
 
 		protected GameObject player;
 		protected Vector3 pr_falsePlayerPosition;
@@ -22,12 +23,23 @@ public class TurretRotation : MonoBehaviour
 		// FixedUpdate is called once per frame
 		void FixedUpdate ()
 		{
+				int direccition;
+				
 				pr_falsePlayerPosition = player.transform.position;
 				pr_falsePlayerPosition.y = transform.position.y;
-
-				
+						
 				if (cannons.GetComponent<ShootingAnim> ().ActivateShooting && Vector3.Angle (transform.right * -1, pr_falsePlayerPosition - transform.position) > pr_maxAngularError) {
-						transform.RotateAround (Axis.transform.position, Vector3.up, RotationSpeed * Time.deltaTime);
+					
+					Quaternion lookAt = Quaternion.LookRotation(player.transform.position - transform.position);
+					Debug.Log (lookAt);
+					if ((lookAt.y > 0 && lookAt.y < 0.5)||lookAt.y < -0.5) {
+						direccition = 1;
+					} else {
+						direccition = -1;
+					}
+
+					transform.RotateAround (Axis.transform.position, Vector3.up, direccition * RotationSpeed * Time.deltaTime);
 				}
 		}
+	
 }
