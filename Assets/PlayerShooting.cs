@@ -9,8 +9,9 @@ public class PlayerShooting : MonoBehaviour
 		public int ClipSize;
 		public int TimeBetweenShots;
 		public int TimeShotStaying;
+		public GUIText AmmoText;
 
-		protected int pr_bulletsLeft;
+		protected float pr_bulletsLeft;
 		protected Vector3 pr_lookDirection;
 		protected int pr_currentTime;
 
@@ -19,6 +20,7 @@ public class PlayerShooting : MonoBehaviour
 		{
 				pr_bulletsLeft = ClipSize;
 				ShotLine.enabled = false;
+				updateAmmoText ();
 		}
 	
 		// Update is called once per frame
@@ -55,10 +57,18 @@ public class PlayerShooting : MonoBehaviour
 						}
 						ShotLine.SetPosition (0, ShotFrom.transform.position);
 				}
+				updateAmmoText ();
 		}
 
 		void reload ()
 		{
 				pr_bulletsLeft = ClipSize;
+				updateAmmoText ();
+		}
+
+		void updateAmmoText ()
+		{
+				AmmoText.text = pr_bulletsLeft.ToString () + "/" + ClipSize.ToString ();
+				AmmoText.color = Color.Lerp (Color.green, Color.red, 1 - (pr_bulletsLeft / ClipSize));
 		}
 }

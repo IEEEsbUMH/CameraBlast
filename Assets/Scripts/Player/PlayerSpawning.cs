@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerSpawning : MonoBehaviour
 {
-
 		public GameObject lastCheckpoint;
 
 		public void Respawn ()

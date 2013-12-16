@@ -15,12 +15,16 @@ public class CharacterMovement : MonoBehaviour
 		public float jetpackPower;
 		public int minHeadAngle;
 		public int maxHeadAngle;
+		public int JetpackCharge;
+		public GUIText JetpackChargeText;
+
 		protected Vector3 pr_movementDirection;
 		protected Vector3 pr_cameraDirection;
 		protected float pr_jumpValue;
 		protected float pr_jetpackValue;
 		protected bool pr_grounded; //Will be true if isGrounded hasn't been false during the last 5 FixedUpdate calls
 		protected int h_notGroundedCount;
+		protected float pr_currentJetpackCharge;
 
 		protected CharacterController pr_controller;
 
@@ -36,11 +40,17 @@ public class CharacterMovement : MonoBehaviour
 				pr_jetpackValue = 0;
 				pr_grounded = false;
 				h_notGroundedCount = 0;
+				pr_currentJetpackCharge = JetpackCharge;
 		}
 	
 		// Update is called once per frame
 		void FixedUpdate ()
 		{
+				if (pr_currentJetpackCharge < JetpackCharge && pr_grounded) {
+						pr_currentJetpackCharge++;
+						updateJetpackText ();
+				}
+
 				checkGrounding ();
 				checkFlyingAgainstCeiling ();
 				processInput ();
@@ -83,8 +93,11 @@ public class CharacterMovement : MonoBehaviour
 				}
 
 				//Modifies pr_verticalSpeed if jetpack is working
-				if (pr_jetpackValue > 0) {
+				if (pr_jetpackValue > 0 && pr_currentJetpackCharge > 0) {
+						pr_currentJetpackCharge--;
 						pr_verticalSpeed += jetpackPower;
+
+						updateJetpackText ();
 
 						//Also clear relative speed to the platform you were on
 						GetComponent<ExternalForces> ().clearCurrentSpeed ();
@@ -110,5 +123,11 @@ public class CharacterMovement : MonoBehaviour
 				if (pr_verticalSpeed > 0 && pr_controller.velocity.y == 0) {
 						pr_verticalSpeed = 0;
 				}
+		}
+
+		void updateJetpackText ()
+		{
+				JetpackChargeText.text = "Jetpack: " + ((int)((pr_currentJetpackCharge / JetpackCharge) * 100)).ToString () + "%";
+				JetpackChargeText.color = Color.Lerp (Color.green, Color.red, 1 - (pr_currentJetpackCharge / JetpackCharge));
 		}
 }

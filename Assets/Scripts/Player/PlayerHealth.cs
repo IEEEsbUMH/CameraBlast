@@ -9,11 +9,13 @@ public class PlayerHealth : MonoBehaviour
 		public int MinY;
 		public GameObject DamageLayer;
 		public GameObject DeathGUIText;
+		public GameObject DeathNumberGUIText;
 		public int CountUntilRespawn;
 
 		protected float pr_health;
 		protected int pr_sinceLastBullet;
 		protected int pr_currentRespawnCount;
+		protected int pr_deaths; //Number of times the player has died
 
 		// Use this for initialization
 		void Start ()
@@ -21,14 +23,18 @@ public class PlayerHealth : MonoBehaviour
 				pr_health = MaxHealth;
 				pr_sinceLastBullet = 0;
 				pr_currentRespawnCount = 0;
+				pr_deaths = 0;
 				DeathGUIText.SetActive (false);
+				updateNumberOfDeaths ();
 		}
 	
 		public void TakeBullet ()
 		{
-				if (pr_health > 0)
+				if (pr_health > 0) {
 						pr_health--;
-				pr_sinceLastBullet = 0;
+						pr_sinceLastBullet = 0;
+				}
+				
 		}
 
 		void FixedUpdate ()
@@ -68,7 +74,7 @@ public class PlayerHealth : MonoBehaviour
 		{
 				pr_health = 0;
 				DeathGUIText.SetActive (true);
-				gameObject.GetComponent<ExternalForces> ().currentPlatform = null;
+				gameObject.GetComponent<ExternalForces> ().currentPlatform = null;	
 		}
 
 		void Revive ()
@@ -77,5 +83,12 @@ public class PlayerHealth : MonoBehaviour
 				pr_health = MaxHealth;
 				GetComponent<PlayerSpawning> ().Respawn ();
 				DeathGUIText.SetActive (false);
+				pr_deaths++;
+				updateNumberOfDeaths ();
+		}
+
+		void updateNumberOfDeaths ()
+		{
+				DeathNumberGUIText.guiText.text = "Muertes: " + pr_deaths.ToString ();
 		}
 }
