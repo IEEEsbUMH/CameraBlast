@@ -9,6 +9,8 @@ public class TurretRotation : MonoBehaviour
 		public float RotationSpeed;
 		public float anglesToChange;
 
+		public bool Test;
+
 		protected GameObject player;
 		protected Vector3 pr_falsePlayerPosition;
 		protected int pr_maxAngularError; //In degrees
@@ -23,22 +25,25 @@ public class TurretRotation : MonoBehaviour
 		// FixedUpdate is called once per frame
 		void FixedUpdate ()
 		{
-				int direccition;
+				int direction;
 				
 				pr_falsePlayerPosition = player.transform.position;
 				pr_falsePlayerPosition.y = transform.position.y;
 						
-				if (cannons.GetComponent<ShootingAnim> ().ActivateShooting && Vector3.Angle (transform.right * -1, pr_falsePlayerPosition - transform.position) > pr_maxAngularError) {
+				float t_angleTowardsPlayer = Quaternion.FromToRotation (transform.right * -1, pr_falsePlayerPosition - transform.position).eulerAngles.y;
+
+
+				if (cannons.GetComponent<ShootingAnim> ().ActivateShooting && t_angleTowardsPlayer > pr_maxAngularError) {
 					
-						Quaternion lookAt = Quaternion.LookRotation (player.transform.position - transform.position);
-						//Debug.Log (lookAt);
-						if ((lookAt.y > 0 && lookAt.y < 0.5) || lookAt.y < -0.5) {
-								direccition = 1;
+						
+						
+						if ((t_angleTowardsPlayer > 0 && t_angleTowardsPlayer < 180) || t_angleTowardsPlayer < -180) {
+								direction = 1;
 						} else {
-								direccition = -1;
+								direction = -1;
 						}
 
-						transform.RotateAround (Axis.transform.position, Vector3.up, direccition * RotationSpeed * Time.deltaTime);
+						transform.RotateAround (Axis.transform.position, Vector3.up, direction * RotationSpeed * Time.deltaTime);
 				}
 		}
 	

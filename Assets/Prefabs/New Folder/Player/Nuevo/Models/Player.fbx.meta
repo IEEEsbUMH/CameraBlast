@@ -1,0 +1,2753 @@
+fileFormatVersion: 2
+guid: 69ba89ced4cc13c4d980afd7eea9c5fa
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: armOne_L
+    100002: armOne_R
+    100004: armTwo_L
+    100006: armTwo_R
+    100008: Auxiliar
+    100010: body
+    100012: BodyDownArmature
+    100014: BodyUpArmature
+    100016: Bone
+    100018: //RootNode
+    100020: Cargador
+    100022: cloth_shirt
+    100024: cloth_trousers
+    100026: Down
+    100028: fingerOneA_L
+    100030: fingerOneA_R
+    100032: fingerOneB_L
+    100034: fingerOneB_R
+    100036: fingerOneC_L
+    100038: fingerOneC_R
+    100040: fingerOneD_L
+    100042: fingerOneD_R
+    100044: fingerOneE_L
+    100046: fingerOneE_R
+    100048: fingerTwoA_L
+    100050: fingerTwoA_R
+    100052: fingerTwoB_L
+    100054: fingerTwoB_R
+    100056: fingerTwoC_L
+    100058: fingerTwoC_R
+    100060: fingerTwoD_L
+    100062: fingerTwoD_R
+    100064: fingerTwoD_R_001
+    100066: fingerTwoE_L
+    100068: foot_L
+    100070: footR
+    100072: hand_L
+    100074: hand_R
+    100076: LegOne_L
+    100078: legOne_R
+    100080: LegTwo_L
+    100082: legTwo_R
+    100084: shoe
+    100086: Up
+    100088: Weapon
+    100090: weaponOne
+    100092: weaponThree
+    100094: weaponTwo
+    400000: armOne_L
+    400002: armOne_R
+    400004: armTwo_L
+    400006: armTwo_R
+    400008: Auxiliar
+    400010: body
+    400012: BodyDownArmature
+    400014: BodyUpArmature
+    400016: Bone
+    400018: //RootNode
+    400020: Cargador
+    400022: cloth_shirt
+    400024: cloth_trousers
+    400026: Down
+    400028: fingerOneA_L
+    400030: fingerOneA_R
+    400032: fingerOneB_L
+    400034: fingerOneB_R
+    400036: fingerOneC_L
+    400038: fingerOneC_R
+    400040: fingerOneD_L
+    400042: fingerOneD_R
+    400044: fingerOneE_L
+    400046: fingerOneE_R
+    400048: fingerTwoA_L
+    400050: fingerTwoA_R
+    400052: fingerTwoB_L
+    400054: fingerTwoB_R
+    400056: fingerTwoC_L
+    400058: fingerTwoC_R
+    400060: fingerTwoD_L
+    400062: fingerTwoD_R
+    400064: fingerTwoD_R_001
+    400066: fingerTwoE_L
+    400068: foot_L
+    400070: footR
+    400072: hand_L
+    400074: hand_R
+    400076: LegOne_L
+    400078: legOne_R
+    400080: LegTwo_L
+    400082: legTwo_R
+    400084: shoe
+    400086: Up
+    400088: Weapon
+    400090: weaponOne
+    400092: weaponThree
+    400094: weaponTwo
+    4300000: shoe
+    4300002: cloth_trousers
+    4300004: Down
+    4300006: cloth_shirt
+    4300008: Up
+    4300010: Cargador
+    4300012: Weapon
+    7400000: Default Take
+    7400002: Andar_Pies
+    7400004: Andar_Pies_Derecha
+    7400006: Andar_Pies_Derecha_Total
+    7400008: Andar_Pies_Izquierda
+    7400010: Andar_Pies_Izquierda_Total
+    7400012: AndarArma
+    7400014: AndarArmaLados
+    7400016: Atake
+    7400018: AtakeTwo
+    7400020: Inicial
+    7400022: Inicial_Pies
+    7400024: Poner
+    7400026: PosInicial_Pies
+    7400028: PosInicialArma
+    7400030: PosInicialArma2
+    7400032: PosInicialAtake
+    7400034: Quitar
+    7400036: Recargar
+    7400038: Saltar_Pies
+    7400040: SaltoArma
+    7400042: QuitarPrincipio
+    7400044: PrimeraVezPoner
+    9500000: //RootNode
+    13700000: Cargador
+    13700002: cloth_shirt
+    13700004: cloth_trousers
+    13700006: Down
+    13700008: shoe
+    13700010: Up
+    13700012: Weapon
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Andar_Pies
+      takeName: Andar_Pies
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Andar_Pies_Derecha
+      takeName: Andar_Pies_Derecha
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Andar_Pies_Derecha_Total
+      takeName: Andar_Pies_Derecha_Total
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Andar_Pies_Izquierda
+      takeName: Andar_Pies_Izquierda
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Andar_Pies_Izquierda_Total
+      takeName: Andar_Pies_Izquierda_Total
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: AndarArma
+      takeName: AndarArma
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: AndarArmaLados
+      takeName: AndarArmaLados
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Atake
+      takeName: Atake
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: AtakeTwo
+      takeName: AtakeTwo
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Inicial
+      takeName: Inicial
+      firstFrame: 0
+      lastFrame: .100000009
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Inicial_Pies
+      takeName: Inicial_Pies
+      firstFrame: 0
+      lastFrame: .100000009
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Poner
+      takeName: Poner
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: PosInicial_Pies
+      takeName: PosInicial_Pies
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: PosInicialArma
+      takeName: PosInicialArma
+      firstFrame: 0
+      lastFrame: 446
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: PosInicialArma2
+      takeName: PosInicialArma2
+      firstFrame: 0
+      lastFrame: 446
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: PosInicialAtake
+      takeName: PosInicialAtake
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Quitar
+      takeName: Quitar
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Recargar
+      takeName: Recargar
+      firstFrame: 0
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Saltar_Pies
+      takeName: Saltar_Pies
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: SaltoArma
+      takeName: SaltoArma
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: PrimeraVezPoner
+      takeName: Poner
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BodyDownArmature
+        weight: 1
+      - path: BodyDownArmature/Auxiliar
+        weight: 1
+      - path: BodyDownArmature/Bone
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L
+        weight: 1
+      - path: BodyDownArmature/Bone/LegOne_L/LegTwo_L/foot_L
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R
+        weight: 1
+      - path: BodyDownArmature/Bone/legOne_R/legTwo_R/footR
+        weight: 1
+      - path: BodyUpArmature
+        weight: 1
+      - path: BodyUpArmature/body
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneA_L/fingerTwoA_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneB_L/fingerTwoB_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneC_L/fingerTwoC_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneD_L/fingerTwoD_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_L/armTwo_L/hand_L/fingerOneE_L/fingerTwoE_L
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneA_R/fingerTwoA_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneB_R/fingerTwoB_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneC_R/fingerTwoC_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneD_R/fingerTwoD_R_001
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R
+        weight: 1
+      - path: BodyUpArmature/body/armOne_R/armTwo_R/hand_R/fingerOneE_R/fingerTwoD_R
+        weight: 1
+      - path: BodyUpArmature/weaponOne
+        weight: 1
+      - path: BodyUpArmature/weaponThree
+        weight: 1
+      - path: BodyUpArmature/weaponTwo
+        weight: 1
+      - path: Cargador
+        weight: 1
+      - path: cloth_shirt
+        weight: 1
+      - path: cloth_trousers
+        weight: 1
+      - path: Down
+        weight: 1
+      - path: shoe
+        weight: 1
+      - path: Up
+        weight: 1
+      - path: Weapon
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
