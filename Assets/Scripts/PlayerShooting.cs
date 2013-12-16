@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Code edited by Miguel Catalan
+using UnityEngine;
 using System.Collections;
 
 public class PlayerShooting : MonoBehaviour
@@ -14,6 +15,7 @@ public class PlayerShooting : MonoBehaviour
 		protected float pr_bulletsLeft;
 		protected Vector3 pr_lookDirection;
 		protected int pr_currentTime;
+		protected float myTimer = 0.3f;
 
 		// Use this for initialization
 		void Start ()
@@ -33,10 +35,19 @@ public class PlayerShooting : MonoBehaviour
 						ShotLine.enabled = false;
 				}
 				if (Input.GetAxis (AxesManager.Fire) > 0) {
-						shoot ();
+						if (myTimer > 0) {
+								myTimer -= Time.deltaTime;
+						}
+						if (myTimer <= 0) {
+								shoot ();
+						}
+					
+				} else {
+					myTimer = 0.3f;
 				}
 				if (Input.GetAxis (AxesManager.Reload) > 0) {
-						reload ();
+
+					reload ();
 				}
 		}
 
