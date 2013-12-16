@@ -14,10 +14,13 @@ public class TurretRotation : MonoBehaviour
 		protected GameObject player;
 		protected Vector3 pr_falsePlayerPosition;
 		protected int pr_maxAngularError; //In degrees
+		private Vector3 initialposition;
+		private int direction;
 
 		// Use this for initialization
 		void Start ()
-		{
+		{	
+				initialposition = transform.forward;
 				player = GameObject.FindGameObjectWithTag (Tags.PLAYER);
 				pr_maxAngularError = 1;
 		}
@@ -25,7 +28,6 @@ public class TurretRotation : MonoBehaviour
 		// FixedUpdate is called once per frame
 		void FixedUpdate ()
 		{
-				int direction;
 				
 				pr_falsePlayerPosition = player.transform.position;
 				pr_falsePlayerPosition.y = transform.position.y;
@@ -44,6 +46,8 @@ public class TurretRotation : MonoBehaviour
 						}
 
 						transform.RotateAround (Axis.transform.position, Vector3.up, direction * RotationSpeed * Time.deltaTime);
+				} else if (!cannons.GetComponent<ShootingAnim> ().ActivateShooting && transform.forward!=initialposition){
+						transform.RotateAround (Axis.transform.position, Vector3.up, -direction * RotationSpeed * Time.deltaTime);
 				}
 		}
 	
