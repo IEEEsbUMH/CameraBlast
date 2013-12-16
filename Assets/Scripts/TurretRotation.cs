@@ -30,15 +30,15 @@ public class TurretRotation : MonoBehaviour
 						
 				if (cannons.GetComponent<ShootingAnim> ().ActivateShooting && Vector3.Angle (transform.right * -1, pr_falsePlayerPosition - transform.position) > pr_maxAngularError) {
 					
-					Quaternion lookAt = Quaternion.LookRotation(player.transform.position - transform.position);
-					Debug.Log (lookAt);
-					if ((lookAt.y > 0 && lookAt.y < 0.5)||lookAt.y < -0.5) {
-						direccition = 1;
-					} else {
-						direccition = -1;
-					}
+						Quaternion lookAt = Quaternion.LookRotation (player.transform.position - transform.position);
+						//Debug.Log (lookAt);
+						if ((lookAt.y > 0 && lookAt.y < 0.5) || lookAt.y < -0.5) {
+								direccition = 1;
+						} else {
+								direccition = -1;
+						}
 
-					transform.RotateAround (Axis.transform.position, Vector3.up, direccition * RotationSpeed * Time.deltaTime);
+						transform.RotateAround (Axis.transform.position, Vector3.up, direccition * RotationSpeed * Time.deltaTime);
 				}
 		}
 	

@@ -68,6 +68,7 @@ public class PlayerHealth : MonoBehaviour
 		{
 				pr_health = 0;
 				DeathGUIText.SetActive (true);
+				gameObject.GetComponent<ExternalForces> ().currentPlatform = null;
 		}
 
 		void Revive ()
