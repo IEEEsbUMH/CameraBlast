@@ -47,11 +47,16 @@ public class PlayerShooting : MonoBehaviour
 						pr_currentTime = 0;
 
 						ShotLine.enabled = true;
-						Ray t_ray = new Ray (ShotFrom.transform.position, pr_lookDirection);
+						Ray t_ray = new Ray (POV.transform.position, pr_lookDirection);
 						RaycastHit t_rayHit;
 
 						if (Physics.Raycast (t_ray, out t_rayHit, 50)) {
 								ShotLine.SetPosition (1, t_rayHit.point);
+
+								if (t_rayHit.collider.gameObject.tag == Tags.CAMERA_BODY) {
+										t_rayHit.collider.gameObject.GetComponent<TakeDamage> ().Die ();
+								}
+
 						} else {
 								ShotLine.SetPosition (1, ShotFrom.transform.position + pr_lookDirection * 10);
 						}
