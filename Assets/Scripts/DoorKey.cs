@@ -19,7 +19,7 @@ public class DoorKey : MonoBehaviour
 				}
 		}
 
-		public static void  OpenDoor ()
+		private void  OpenDoor ()
 		{
 				LeftDoor.transform.Translate (transform.right * 0.8f, Space.World);
 				RightDoor.transform.Translate (transform.right * -1 * 0.8f, Space.World);
