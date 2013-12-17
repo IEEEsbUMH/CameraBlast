@@ -4,6 +4,7 @@ using System.Collections;
 
 public class PlayerShooting : MonoBehaviour
 {
+		public AudioSource shotSound;
 		public GameObject POV;
 		public GameObject ShotFrom;
 		public LineRenderer ShotLine;
@@ -58,6 +59,7 @@ public class PlayerShooting : MonoBehaviour
 						pr_currentTime = 0;
 
 						ShotLine.enabled = true;
+						shotSound.Play ();
 						Ray t_ray = new Ray (POV.transform.position, pr_lookDirection);
 						RaycastHit t_rayHit;
 
