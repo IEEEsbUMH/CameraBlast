@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Animation_Player_Body : MonoBehaviour
 {
+		public GameObject Parent;
 		public Animator _animPlayer;
 		public float _axisZ;
 		public float _axisX;
@@ -40,7 +41,7 @@ public class Animation_Player_Body : MonoBehaviour
 								if (Input.GetAxis (AxesManager.Jump) > 0.01) {
 										_animPlayer.SetBool ("Jump", true);
 								}
-								if (Input.GetAxis (AxesManager.Fire) > 0) {
+								if (Input.GetAxis (AxesManager.Fire) > 0 && Parent.GetComponent<PlayerShooting> ().CurrentAmmo > 0) {
 										_animPlayer.SetBool ("Atack", true);
 								} else {
 										_animPlayer.SetBool ("Atack", false);

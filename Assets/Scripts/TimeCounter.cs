@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TimeCounter : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+public class TimeCounter : MonoBehaviour
+{
+		public float counter;
+		public bool pauseTime;
+		public GUIText TimeGUIText;
 	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+		// Update is called once per frame
+		void Update ()
+		{
+				if (!pauseTime) {
+						counter += Time.deltaTime;
+						TimeGUIText.text = "Tiempo: " + counter.ToString ("0.00") + "s";
+				}
+		}
 }

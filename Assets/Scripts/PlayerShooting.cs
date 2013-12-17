@@ -12,6 +12,12 @@ public class PlayerShooting : MonoBehaviour
 		public int TimeBetweenShots;
 		public int TimeShotStaying;
 		public GUIText AmmoText;
+		public bool ShootingIsAvailable;
+		public float CurrentAmmo {
+				get {
+						return pr_bulletsLeft;
+				}
+		}
 
 		protected float pr_bulletsLeft;
 		protected Vector3 pr_lookDirection;
@@ -29,26 +35,28 @@ public class PlayerShooting : MonoBehaviour
 		// Update is called once per frame
 		void FixedUpdate ()
 		{
-				pr_currentTime++;
-				pr_lookDirection = POV.transform.forward;
+				if (ShootingIsAvailable) {
+						pr_currentTime++;
+						pr_lookDirection = POV.transform.forward;
 
-				if (pr_currentTime == TimeShotStaying) {
-						ShotLine.enabled = false;
-				}
-				if (Input.GetAxis (AxesManager.Fire) > 0) {
-						if (myTimer > 0) {
-								myTimer -= Time.deltaTime;
+						if (pr_currentTime == TimeShotStaying) {
+								ShotLine.enabled = false;
 						}
-						if (myTimer <= 0) {
-								shoot ();
-						}
+						if (Input.GetAxis (AxesManager.Fire) > 0) {
+								if (myTimer > 0) {
+										myTimer -= Time.deltaTime;
+								}
+								if (myTimer <= 0) {
+										shoot ();
+								}
 					
-				} else {
-					myTimer = 0.3f;
-				}
-				if (Input.GetAxis (AxesManager.Reload) > 0) {
+						} else {
+								myTimer = 0.3f;
+						}
+						if (Input.GetAxis (AxesManager.Reload) > 0) {
 
-					reload ();
+								reload ();
+						}
 				}
 		}
 

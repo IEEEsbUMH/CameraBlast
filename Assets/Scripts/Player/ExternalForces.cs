@@ -12,7 +12,7 @@ public class ExternalForces : MonoBehaviour
 		void FixedUpdate ()
 		{
 				if (currentPlatform != null) {
-						transform.Translate (pr_currentSpeed, 0, 0, Space.World);
+						gameObject.GetComponent<CharacterController> ().Move (new Vector3 (pr_currentSpeed, 0, 0));
 				}
 		}
 
