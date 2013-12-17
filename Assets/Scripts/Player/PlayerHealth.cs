@@ -74,6 +74,7 @@ public class PlayerHealth : MonoBehaviour
 		{
 				pr_health = 0;
 				DeathGUIText.SetActive (true);
+				DeathNumberGUIText.SetActive (true);
 				gameObject.GetComponent<ExternalForces> ().currentPlatform = null;	
 		}
 
@@ -83,6 +84,7 @@ public class PlayerHealth : MonoBehaviour
 				pr_health = MaxHealth;
 				GetComponent<PlayerSpawning> ().Respawn ();
 				DeathGUIText.SetActive (false);
+				DeathNumberGUIText.SetActive (false);
 				pr_deaths++;
 				updateNumberOfDeaths ();
 		}
