@@ -9,7 +9,7 @@ public class DoorKey : MonoBehaviour
 		public GameObject LeftDoor;
 		public GameObject RightDoor;
 
-		private bool open = false;
+		public bool open = false;
 
 		// Update is called once per frame
 		void Update ()
