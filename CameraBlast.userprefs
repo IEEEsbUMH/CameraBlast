@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerShooting.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TurretRotation.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PlayerSpawning.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/TakeDamage.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CameraVision.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ShootingAnim.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PickableUp.cs" Line="28" Column="15" />
-      <File FileName="Assets/Prefabs/Player/Scripts/Animation_Player_Body.cs" Line="44" Column="107" />
-      <File FileName="Assets/Scripts/PlayerShooting.cs" Line="16" Column="15" />
+      <File FileName="Assets/Scripts/Player/PlayerHealth.cs" Line="79" Column="69" />
+      <File FileName="Assets/Scripts/DoorKey.cs" Line="22" Column="24" />
+      <File FileName="Assets/Scripts/MovingPlatformBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/ExternalForces.cs" Line="28" Column="6" />
+      <File FileName="Assets/Scripts/Player/CharacterMovement.cs" Line="108" Column="43" />
+      <File FileName="Assets/Scripts/Player/PlayerSpawning.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/TurretRotation.cs" Line="50" Column="97" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
