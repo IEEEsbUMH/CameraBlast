@@ -14,8 +14,8 @@ public class TurretRotation : MonoBehaviour
 		protected GameObject player;
 		protected Vector3 pr_falsePlayerPosition;
 		protected int pr_maxAngularError; //In degrees
-		private Vector3 initialposition;
-		private int direction;
+		protected Vector3 initialposition;
+		protected int direction;
 
 		// Use this for initialization
 		void Start ()
@@ -46,8 +46,9 @@ public class TurretRotation : MonoBehaviour
 						}
 
 						transform.RotateAround (Axis.transform.position, Vector3.up, direction * RotationSpeed * Time.deltaTime);
-				} else if (!cannons.GetComponent<ShootingAnim> ().ActivateShooting && transform.forward!=initialposition){
-						transform.RotateAround (Axis.transform.position, Vector3.up, -direction * RotationSpeed * Time.deltaTime);
+				} else if (!cannons.GetComponent<ShootingAnim> ().ActivateShooting && transform.forward != initialposition) {
+						float t_angleTowardsOrigin = Quaternion.FromToRotation (transform.forward, initialposition).eulerAngles.y;
+						transform.RotateAround (Axis.transform.position, Vector3.up, (t_angleTowardsOrigin < 180 ? 1 : -1) * RotationSpeed * Time.deltaTime);
 				}
 		}
 	

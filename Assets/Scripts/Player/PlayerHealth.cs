@@ -76,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
 				DeathGUIText.SetActive (true);
 				DeathNumberGUIText.SetActive (true);
 				gameObject.GetComponent<ExternalForces> ().currentPlatform = null;	
+				gameObject.GetComponent<ExternalForces> ().clearCurrentSpeed ();
 		}
 
 		void Revive ()

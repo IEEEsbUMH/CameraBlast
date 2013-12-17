@@ -105,7 +105,7 @@ public class CharacterMovement : MonoBehaviour
 				
 				Vector3 t_gravityMovement = new Vector3 (0, pr_verticalSpeed * Time.deltaTime, 0);
 
-				pr_controller.Move (transform.right * pr_movementDirection.x + transform.forward * pr_movementDirection.z + t_gravityMovement);
+				pr_controller.Move (transform.right * pr_movementDirection.x + transform.forward * pr_movementDirection.z + t_gravityMovement + Vector3.right * gameObject.GetComponent<ExternalForces> ().CurrentSpeed);
 		}
 
 		void checkGrounding ()

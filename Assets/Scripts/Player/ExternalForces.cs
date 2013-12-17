@@ -6,14 +6,18 @@ using System.Collections;
 public class ExternalForces : MonoBehaviour
 {
 		public GameObject currentPlatform;
+		public float CurrentSpeed {
+				get {
+						return pr_currentSpeed;
+				}
+		}
+
 		protected float pr_currentSpeed;//Used in case the platform changes direction during a jump, for example
 
 		// Update is called once per frame
 		void FixedUpdate ()
 		{
-				if (currentPlatform != null) {
-						gameObject.GetComponent<CharacterController> ().Move (new Vector3 (pr_currentSpeed, 0, 0));
-				}
+	
 		}
 
 		void OnControllerColliderHit (ControllerColliderHit a_hit)
