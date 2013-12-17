@@ -9,7 +9,7 @@ public class DoorKey : MonoBehaviour
 		public GameObject LeftDoor;
 		public GameObject RightDoor;
 
-		public bool open = false;
+		private bool open = false;
 
 		// Update is called once per frame
 		void Update ()
@@ -19,7 +19,7 @@ public class DoorKey : MonoBehaviour
 				}
 		}
 
-		void OpenDoor ()
+		public static void  OpenDoor ()
 		{
 				LeftDoor.transform.Translate (transform.right * 0.8f, Space.World);
 				RightDoor.transform.Translate (transform.right * -1 * 0.8f, Space.World);
