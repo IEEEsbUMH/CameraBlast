@@ -26,6 +26,11 @@ public class ExternalForces : MonoBehaviour
 						currentPlatform = a_hit.gameObject;
 						pr_currentSpeed = currentPlatform.GetComponent<MovingPlatformBehaviour> ().currentSpeed;
 				}
+
+				if (a_hit.gameObject.tag == Tags.STILL_PLATFORM) {
+						currentPlatform = a_hit.gameObject;
+						pr_currentSpeed = 0;
+				}
 		}
 
 

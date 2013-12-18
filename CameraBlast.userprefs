@@ -1,14 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TurretRotation.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EndLine.cs">
     <Files>
       <File FileName="Assets/Scripts/Player/PlayerHealth.cs" Line="79" Column="69" />
-      <File FileName="Assets/Scripts/DoorKey.cs" Line="22" Column="24" />
+      <File FileName="Assets/Scripts/DoorKey.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MovingPlatformBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/ExternalForces.cs" Line="28" Column="6" />
-      <File FileName="Assets/Scripts/Player/CharacterMovement.cs" Line="108" Column="43" />
-      <File FileName="Assets/Scripts/Player/PlayerSpawning.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Player/ExternalForces.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/CharacterMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerSpawning.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/TurretRotation.cs" Line="50" Column="97" />
+      <File FileName="Assets/Scripts/TimeCounter.cs" Line="15" Column="1" />
+      <File FileName="Assets/EndLine.cs" Line="12" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
