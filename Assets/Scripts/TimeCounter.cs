@@ -4,7 +4,7 @@ using System.Collections;
 public class TimeCounter : MonoBehaviour
 {
 		public float counter;
-		public bool pauseTime;
+		public static bool pauseTime;
 		public GUIText TimeGUIText;
 	
 		// Update is called once per frame
