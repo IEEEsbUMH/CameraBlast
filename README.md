@@ -14,7 +14,7 @@ To play CameraBlast, download the client for your OS [inside Game folder][5].
 * Vicente ([vicenteloco][4]).
 
 ##Gameplay
-**(Spanish)**
+**(Spanish)** [by Kolduis][7].
 
 [![](http://img.youtube.com/vi/-2aPbMMnvHE/0.jpg)][6]
 
@@ -42,3 +42,4 @@ To play CameraBlast, download the client for your OS [inside Game folder][5].
 [4]: https://github.com/vicenteloco
 [5]: https://github.com/IEEEsbUMH/CameraBlast/tree/master/Game
 [6]: https://www.youtube.com/watch?v=-2aPbMMnvHE
+[7]: https://www.youtube.com/user/belzotas?feature=watch
